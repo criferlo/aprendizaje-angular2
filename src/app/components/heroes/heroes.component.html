@@ -1,3 +1,13 @@
-<p>
-  heroes works!
-</p>
+<div class="card-columns">
+  <div class="card animated fadeIn fast" style="width: 20rem;" *ngFor="let hero of heroes; let i = index">
+    <img class="card-img-top" src="{{hero.img}}" [alt]=hero.nombre>
+    <div class="card-body">
+      <h4 class="card-title">{{hero.nombre}}</h4>
+      <p class="card-text">{{hero.bio}}</p>
+      <button
+        type="button"
+        class="btn btn-outline-primary btn-block"
+        (click)="verHeroe(hero.id)">Ver</button>
+    </div>
+  </div>
+</div>
