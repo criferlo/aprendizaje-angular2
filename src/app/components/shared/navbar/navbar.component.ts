@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   }
 
   buscarHeroes(search:string){
+      console.log(search);
       this._router.navigate(['search',search]);
   }
 

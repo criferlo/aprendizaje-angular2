@@ -78,7 +78,7 @@ export class HeroesService{
 
     let heroe:Heroe;
     let cad = search.toLowerCase();
-    let encon:Heroe[];
+    let encon:Heroe[]=new Array();
     for(let h of this.heroes){
       let name = h.nombre.toLowerCase();
       if(name.indexOf(cad)>=0){
